@@ -84,7 +84,10 @@ public:
                 winner = true;
                 cout << "Player " << player << ", you win!\n";
             }
-                                         
+            if (validPos.size() == 0) {
+                winner = true;
+                cout << "It's a tie!\n";
+            }
             
             // switch player
             if (player == '1') {
